@@ -1,0 +1,132 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Tipografia mais clássica, condizente com a atmosfera da obra */
+    background-color: #e0dccd; /* Tom de terra suave */
+    background-image: url(../images/16143409811_a8727d42f8_b-1.webp);
+    background-size: cover;
+    color: #2b2b2b;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #601d1d; /* Vermelho escuro, simbolizando revolução */
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.senai-Logo {
+    max-width: 150px;
+}
+
+/* Container Geral */
+.container {
+    background-color: #fdf7e0d8; /* Tom de pergaminho antigo */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Título Principal */
+h1 {
+    color: #601d1d; /* Vermelho escuro, para dar ênfase ao tema */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Letras maiúsculas para dar um toque autoritário */
+}
+
+/* Área do Jogo */
+#jogo {
+    position: relative;
+}
+
+#palavra {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    color: #2b2b2b;
+}
+
+#dica {
+    font-size: 1.25rem;
+    color: #705d56; /* Tom de madeira velha */
+}
+
+#status {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #601d1d; /* Destaque para status */
+}
+
+#attempts {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555; /* Suaviza a cor das tentativas restantes */
+}
+
+input[type="text"] {
+    width: 1000px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #601d1d; /* Bordas vermelhas escuras */
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fdf7e0;
+}
+
+.botoes {
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 10px;
+    background-color: #fa4504; /* Botões com tom de madeira envelhecida */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #601d1d; /* Destaque vermelho escuro ao passar o mouse */
+}
+
+/* Estilização da área da forca */
+#forca {
+    position: relative;
+    width: 150px;
+    height: 250px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    background-color: #f4f4f4;
+}
+
+#forca div {
+    background-color: #333;
+}
+
+#cabeca {
+    border-radius: 50%;
+}
+
+#corpo {
+    background-color: rgb(0, 0, 0);
+}
+
+#bracoEsquerdo,
+#bracoDireito {
+    background-color: rgb(0, 0, 0);
+}
+
+#pernaEsquerda,
+#pernaDireita {
+    background-color: rgb(0, 0, 0);
+}
